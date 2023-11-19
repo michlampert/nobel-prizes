@@ -5,7 +5,7 @@ import { formatDate, formatNumber } from "@/utils/utils";
 import { Container } from "@mui/material";
 import { GridColDef, GridValueFormatterParams, DataGrid } from "@mui/x-data-grid";
 
-export default function Search(props: {nobelPrizes: NobelPrize[]}) {
+export default function Search(props: {nobelPrizes: NobelPrize[], lang: 'en' | 'no' | 'se'}) {
 
     const columns: GridColDef[] = [
         {
@@ -44,7 +44,7 @@ export default function Search(props: {nobelPrizes: NobelPrize[]}) {
         .map((np, id) => ({
             id,
             ...np,
-            category: np.category.en
+            category: np.category[props.lang]
         }))
 
     return (
