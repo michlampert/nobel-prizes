@@ -39,12 +39,12 @@ export default function Search(props: { years: string[] }) {
                         }
                         severity="info"
                     >
-                        Select year of Nobel Prize
+                        Wybierz rok przyznania Nagrody Nobla!
                     </Alert>
                 </Collapse>
 
                 <FormControl fullWidth margin="normal">
-                    <InputLabel id="year-select">Year</InputLabel>
+                    <InputLabel id="year-select">Rok</InputLabel>
                     <Select
                         labelId="year-select"
                         id="year-select"
@@ -63,15 +63,16 @@ export default function Search(props: { years: string[] }) {
                         onChange={(event, value) => setLang(value as string)}
                         aria-label="text alignment"
                         fullWidth
+                        size="small"
                     >
                         <ToggleButton value="en" aria-label="left aligned">
-                            🇬🇧<br />English
+                            🇬🇧<br />Angielski
                         </ToggleButton>
                         <ToggleButton value="no" aria-label="centered">
-                            🇳🇴<br />Norwegian
+                            🇳🇴<br />Norweski
                         </ToggleButton>
                         <ToggleButton value="se" aria-label="right aligned">
-                            🇸🇪<br />Swedish
+                            🇸🇪<br />Szwedzki
                         </ToggleButton>
                     </ToggleButtonGroup>
                 </FormControl>
@@ -83,7 +84,7 @@ export default function Search(props: { years: string[] }) {
                         size="large"
                         disabled={!year}
                     >
-                        Search
+                        Wyszukaj nagrody
                     </Button>
                 </FormControl>
             </Container>

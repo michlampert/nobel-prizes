@@ -15,7 +15,7 @@ export default function TopBar() {
                         <EmojiEventsIcon />
                         &nbsp;
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Nobel Prize Explorer
+                            Przeglądarka Nagród Nobla
                         </Typography>
                     </Link>
                 </Toolbar>

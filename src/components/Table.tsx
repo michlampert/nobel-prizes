@@ -10,19 +10,19 @@ export default function Search(props: {nobelPrizes: NobelPrize[], lang: 'en' | '
     const columns: GridColDef[] = [
         {
             field: 'awardYear',
-            headerName: 'Award Year',
+            headerName: 'Rok',
             flex: 1,
             disableColumnMenu: true,
         },
         {
             field: 'category',
-            headerName: 'Category',
+            headerName: 'Kategoria',
             flex: 1,
             disableColumnMenu: true,
         },
         {
             field: 'dateAwarded',
-            headerName: 'Date Awarded',
+            headerName: 'Data',
             flex: 1,
             valueFormatter: ({ value }: GridValueFormatterParams<string>) => {
                 return formatDate(value)
@@ -31,7 +31,7 @@ export default function Search(props: {nobelPrizes: NobelPrize[], lang: 'en' | '
         },
         {
             field: 'prizeAmount',
-            headerName: 'Prize',
+            headerName: 'Wartość nagrody',
             flex: 1,
             valueFormatter: ({ value }: GridValueFormatterParams<number>) => {
                 return formatNumber(value)
