@@ -1,0 +1,6 @@
+.link {
+    text-decoration: inherit;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
