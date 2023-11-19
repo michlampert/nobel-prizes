@@ -4,7 +4,7 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 export default function TopBar() {
     return (
         <>
-            <AppBar>
+            <AppBar position="sticky" sx={{ mb: 3 }}>
                 <Toolbar>
                     <EmojiEventsIcon />
                     &nbsp;

@@ -1,9 +1,14 @@
-import TopBar from './TopBar';
+import data from "../data/data.json"
+import { NobelPrize } from "../utils/model";
+import Search from "../components/Search";
 
-export default function Home() {
+const nobelPrizes = data.nobelPrizes as NobelPrize[]
+
+export default function Page() {
+
   return (
     <>
-      <TopBar />
+      <Search years={[...new Set(nobelPrizes.map(np => np.awardYear))]}/>
     </>
   )
 }
